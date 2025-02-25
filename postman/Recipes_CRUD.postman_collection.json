@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "238c2393-82ca-4571-a6b9-92293a30ca83",
+		"name": "Recipes_CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42557214"
+	},
+	"item": [
+		{
+			"name": "addRecipes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Pasta Carbonara\",\r\n  \"ingredients\": [\"Pasta\", \"Eggs\", \"Bacon\", \"Parmesan Cheese\", \"Pepper\"],\r\n  \"instructions\": \"Cook pasta, mix with eggs and bacon, add cheese and pepper.\",\r\n  \"category\": \"Italian\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://receips-crud-app.onrender.com/api/recipes",
+					"protocol": "https",
+					"host": [
+						"receips-crud-app",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retrieveAllRecipes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://receips-crud-app.onrender.com/api/recipes",
+					"protocol": "https",
+					"host": [
+						"receips-crud-app",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retrieveById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://receips-crud-app.onrender.com/api/recipes/67bd5c802531ae91ab5771c5",
+					"protocol": "https",
+					"host": [
+						"receips-crud-app",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"recipes",
+						"67bd5c802531ae91ab5771c5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_recipe",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://receips-crud-app.onrender.com/api/recipes/67bd5c802531ae91ab5771c5",
+					"protocol": "https",
+					"host": [
+						"receips-crud-app",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"recipes",
+						"67bd5c802531ae91ab5771c5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Sambar\",\r\n  \"ingredients\": [\"Toor Dal\", \"Tamarind\", \"Mixed Vegetables\", \"Sambar Powder\", \"Mustard Seeds\", \"Curry Leaves\"],\r\n  \"instructions\": \"Cook toor dal. Boil vegetables with tamarind and sambar powder. Add cooked dal and temper with mustard seeds and curry leaves.\",\r\n  \"category\": \"Indian\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://receips-crud-app.onrender.com/api/recipes/67bd5c802531ae91ab5771c5",
+					"protocol": "https",
+					"host": [
+						"receips-crud-app",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"recipes",
+						"67bd5c802531ae91ab5771c5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
